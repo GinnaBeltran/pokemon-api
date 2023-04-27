@@ -1,0 +1,99 @@
+body{
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/09/All-Pokemon-Desktop-Background.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;  
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    flex-direction: column;
+  }
+  
+  .search-container__input-pokemon{
+      position: relative;
+      background: #fff;
+      border: none;
+      font-size: 20px;
+      height: 30%;
+      padding: 0.5%;
+      width: 30%;
+      margin: 10px;
+      border-radius: 30px;
+      outline: none;
+  }
+  
+  .btn-search, .btn-add, .btn-clear, .cards-fav__deleteButton{
+      position: relative;
+      border: none;
+      width: 100px;
+      height: 30px;
+      margin: 10px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 23px;
+      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #575656;
+  }
+  
+  .btn-search:hover, .btn-add:hover, .btn-clear:hover, .cards-fav__deleteButto:hover {
+    background: rgba(130, 130, 135,0.8);
+    color: #fff;
+  }
+  
+  .favourite-list{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 10px;
+  }
+  
+  
+  .cards-fav{
+    display: inline-grid;
+    align-items:center;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+    grid-template-columns: auto;
+    height: auto;
+    background-color: rgba(237, 252, 242, 0.5);
+    margin: 15px 20px 20px 0px;
+    border-style: hidden;
+    transition: all 0.25s ;
+  }
+  
+  .cards-fav:hover{
+    transform: translateY(-20px);
+    
+  }
+  
+  .cards-fav__image {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0%;
+  }
+  
+  .cards-fav__name, .cards-fav__idItem {
+      color: #2F2F2F;
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2%;
+      margin-top: 0%;
+      padding: 10px;
+  }
+  
+  .cards-fav__deleteButton{
+    margin:auto;
+    margin-bottom: 10%;
+  }
+  
+  .cards-fav__deleteButton:hover{
+    background: rgba(130, 130, 135,0.8);
+    color: #fff;
+  }
+  
